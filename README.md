@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Git Repository Viewer
 
-## Getting Started
+A modern web application built with Next.js that provides a beautiful and interactive visualization of local Git repositories. This tool allows you to explore Git repositories, view commit history, branch information, and more through an intuitive user interface.
 
-First, run the development server:
+## Features
+
+- 📁 Browse and select local Git repositories
+- 📤 Upload `.git` folders directly
+- 📊 Visual commit graph representation
+- 🔍 Detailed commit information
+- 🌳 Branch overview and management
+- 🎨 Beautiful UI powered by shadcn/ui
+- 🌓 Dark/Light mode support
+
+## Prerequisites
+
+- Node.js 18.x or higher
+- Git installed on your system
+
+## Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/git-viewer.git
+cd git-viewer
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+## Development
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Building for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- **Framework**: Next.js 15.2
+- **UI Components**: shadcn/ui
+- **Styling**: Tailwind CSS
+- **Git Operations**: simple-git
+- **Language**: TypeScript
+- **State Management**: React Hooks
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `/app` - Next.js application routes and API endpoints
+- `/components` - Reusable React components
+- `/lib` - Utility functions and shared code
+- `/public` - Static assets
+- `/app/api/git` - Git operations API endpoints
 
-## Deploy on Vercel
+## Features in Detail
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Repository Management
+- Configure base directory for repository searches
+- Upload `.git` folders directly
+- Persistent repository storage
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Git Operations
+- View commit history with graph visualization
+- Browse branches and remote information
+- View detailed commit information
+- Real-time updates
+
+### User Interface
+- Modern and responsive design
+- Dark/Light theme support
+- Interactive commit graph
+- Intuitive navigation
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- Built with [Next.js](https://nextjs.org/)
+- UI components from [shadcn/ui](https://ui.shadcn.com/)
+- Git operations powered by [simple-git](https://github.com/steveukx/git-js)
